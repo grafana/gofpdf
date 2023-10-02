@@ -1,6 +1,5 @@
 # GoFPDF document generator
 
-[![No Maintenance Intended][badge-no-maintain]][unmaintained]
 [![MIT licensed][badge-mit]][license]
 [![GoDoc][badge-doc]][godoc]
 
@@ -42,35 +41,18 @@ purpose fonts. For these languages, a specialized font (for example,
 Also, support is provided to automatically translate UTF-8 runes to code page
 encodings for languages that have fewer than 256 glyphs.
 
-## We Are Closed
-
-This repository will not be maintained, at least for some unknown duration. But
-it is hoped that gofpdf has a bright future in the open source world. Due to
-Go's promise of compatibility, gofpdf should continue to function without
-modification for a longer time than would be the case with many other
-languages.
-
-Forks should be based on the [last viable commit][last-commit]. Tools such as
-[active-forks][gofpdf-fork] can be used to select a fork that looks promising
-for your needs. If a particular fork looks like it has taken the lead in
-attracting followers, this README will be updated to point people in that
-direction.
-
-The efforts of all contributors to this project have been deeply appreciated.
-Best wishes to all of you.
-
 ## Installation
 
 To install the package on your system, run
 
 ```shell
-go get github.com/jung-kurt/gofpdf
+go get github.com/grafana/gofpdf
 ```
 
 Later, to receive updates, run
 
 ```shell
-go get -u -v github.com/jung-kurt/gofpdf/...
+go get -u -v github.com/grafana/gofpdf/...
 ```
 
 ## Quick Start
@@ -259,26 +241,24 @@ for file attachments and annotations.
 [badge-doc]: https://img.shields.io/badge/godoc-GoFPDF-blue.svg 
 [badge-github]: https://img.shields.io/badge/project-Git_Hub-blue.svg
 [badge-mit]: https://img.shields.io/badge/license-MIT-blue.svg
-[badge-no-maintain]: http://unmaintained.tech/badge.svg
 [coverage]: https://blog.golang.org/cover
 [dfont]: http://dejavu-fonts.org/
 [draw2d-site]: https://github.com/llgcode/draw2d
 [effective-go]: https://golang.org/doc/effective_go.html 
 [fpdf-site]: http://www.fpdf.org/
-[fpdf-test]: https://github.com/jung-kurt/gofpdf/blob/master/fpdf_test.go
+[fpdf-test]: https://github.com/grafana/gofpdf/blob/master/fpdf_test.go
 [gfont]: https://fonts.google.com/
-[github]: https://github.com/jung-kurt/gofpdf
-[godoc]: https://pkg.go.dev/github.com/jung-kurt/gofpdf
-[gofpdf-fork]: https://techgaun.github.io/active-forks/index.html#jung-kurt/gofpdf
+[github]: https://github.com/grafana/gofpdf
+[godoc]: https://pkg.go.dev/github.com/grafana/gofpdf
+[gofpdf-fork]: https://techgaun.github.io/active-forks/index.html#grafana/gofpdf
 [issue109]: https://github.com/jung-kurt/gofpdf/issues/109
 [jung]: https://github.com/jung-kurt/
 [last-commit]: https://github.com/jung-kurt/gofpdf/commit/603f56990463f011cb1dbb64ef7f872c1adc009a
-[license]: https://raw.githubusercontent.com/jung-kurt/gofpdf/master/LICENSE
+[license]: https://raw.githubusercontent.com/grafana/gofpdf/master/LICENSE
 [lint]: https://github.com/golang/lint
-[logo-old]: https://github.com/jung-kurt/gofpdf/raw/master/image/logo_gofpdf.jpg?raw=true
-[logo]: https://raw.githubusercontent.com/jung-kurt/gofpdf/master/image/logo_gofpdf.jpg
+[logo-old]: https://github.com/grafana/gofpdf/raw/master/image/logo_gofpdf.jpg?raw=true
+[logo]: https://raw.githubusercontent.com/grafana/gofpdf/master/image/logo_gofpdf.jpg
 [noto]: https://github.com/jsntn/webfonts/blob/master/NotoSansSC-Regular.ttf
 [pr]: https://help.github.com/articles/using-pull-requests/
-[test]: https://github.com/jung-kurt/gofpdf/blob/master/fpdf_test.go
-[unmaintained]: http://unmaintained.tech/
+[test]: https://github.com/grafana/gofpdf/blob/master/fpdf_test.go
 [vet]: https://golang.org/cmd/vet/
