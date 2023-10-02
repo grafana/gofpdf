@@ -2925,7 +2925,7 @@ func (f *Fpdf) WriteLinkID(h float64, displayStr string, linkID int) {
 //
 // width indicates the width of the box the text will be drawn in. This is in
 // the unit of measure specified in New(). If it is set to 0, the bounding box
-//of the page will be taken (pageWidth - leftMargin - rightMargin).
+// of the page will be taken (pageWidth - leftMargin - rightMargin).
 //
 // lineHeight indicates the line height in the unit of measure specified in
 // New().
@@ -3859,7 +3859,7 @@ func (f *Fpdf) replaceAliases() {
 	for mode := 0; mode < 2; mode++ {
 		for alias, replacement := range f.aliasMap {
 			if mode == 1 {
-				alias = utf8toutf16(alias, false)
+				alias = f.escape(utf8toutf16(alias, false))
 				replacement = utf8toutf16(replacement, false)
 			}
 			for n := 1; n <= f.page; n++ {
