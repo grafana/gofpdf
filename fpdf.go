@@ -53,6 +53,10 @@ type fmtBuffer struct {
 	bytes.Buffer
 }
 
+func (b *fmtBuffer) print(str string) {
+	b.Buffer.WriteString(str)
+}
+
 func (b *fmtBuffer) printf(fmtStr string, args ...interface{}) {
 	b.Buffer.WriteString(fmt.Sprintf(fmtStr, args...))
 }
@@ -4309,7 +4313,7 @@ func implode(sep string, arr []int) string {
 	var s fmtBuffer
 	for i := 0; i < len(arr)-1; i++ {
 		s.printf("%v", arr[i])
-		s.printf(sep)
+		s.print(sep)
 	}
 	if len(arr) > 0 {
 		s.printf("%v", arr[len(arr)-1])
@@ -4907,7 +4911,7 @@ func (f *Fpdf) ClosePath() {
 //
 // The MoveTo() example demonstrates this method.
 func (f *Fpdf) DrawPath(styleStr string) {
-	f.outf(fillDrawOp(styleStr))
+	f.out(fillDrawOp(styleStr))
 }
 
 // ArcTo draws an elliptical arc centered at point (x, y). rx and ry specify its
