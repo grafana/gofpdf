@@ -26,7 +26,6 @@ text, drawing and images.
 * Document protection
 * Layers
 * Templates
-* Barcodes
 * Charting facility
 * Import PDFs as templates
 

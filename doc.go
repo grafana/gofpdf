@@ -36,8 +36,6 @@ support for text, drawing and images.
 
 -   Templates
 
--   Barcodes
-
 -   Charting facility
 
 -   Import PDFs as templates
